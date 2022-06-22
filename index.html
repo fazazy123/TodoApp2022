@@ -1,0 +1,49 @@
+<!-- styling todo app
+' -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="header__title">Todo App</h1>
+        <div class="header__subtitle">What do you need to do?</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="actions__container actions__container--spaced">
+        <input
+          id="search-text"
+          type="text"
+          placeholder="Filter todos"
+          class="input"
+        />
+        <label class="checkbox">
+          <input type="checkbox" id="hide-completed" />Hide Completed
+        </label>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="todos"></div>
+      <form id="todo-form">
+        <input
+          type="text"
+          name="todoText"
+          class="input"
+          placeholder="Something to do"
+        />
+        <button id="add-todo" class="button">Add Todo</button>
+      </form>
+    </div>
+
+    <script src="scripts/uuid-array-todos.js"></script>
+    <script src="scripts/cl1a-todo-function.js"></script>
+    <script src="scripts/cl1b-todo-app.js"></script>
+  </body>
+</html>
